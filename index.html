@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>try sticky nav bar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style >
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin:0;
+			padding:0;
+			width:100vw;
+			height:100vh;
+			display: flex;
+			overflow-x: auto;
+			overflow-y: hidden;
+			 -webkit-overflow-scrolling: touch;
+			
+
+		}
+		
+		body>div{
+			min-width:100%;
+			height:100%;
+		}
+		#item1,#item3,#item5{
+			background-color: grey;
+		}
+		#item2{
+			min-width:20%;
+			align-self: flex-start;
+			position: sticky;
+			left:0;
+			top:0;
+			background-color: lightblue;
+		}
+		#item3{
+			background: url("image/pa3.jpg") no-repeat fixed 100% ;
+		}
+		.inner-parallex{
+			padding:0 30%;
+		}
+	</style>
+</head>
+<body>
+	<div id="item1">1</div>
+	<div id="item2">2</div>
+	<div id="item3">
+		<div class="inner-parallex"></div>
+	</div>
+	<div id="item4">4</div>
+	<div id="item5">5</div>
+</body>
+</html>
